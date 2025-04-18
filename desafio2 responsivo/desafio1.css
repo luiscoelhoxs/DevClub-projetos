@@ -1,0 +1,125 @@
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    margin: 47px 0 0 42px;
+}
+
+.link-header {
+    margin-right: 32px;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.88px;
+    cursor: pointer;
+    color: #17233D;
+}
+
+button {
+    width: 124px;
+    height: 51px;
+    border-radius: 6px;
+    background: #6FBF44;
+    color: white;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+.text-box {
+    border: none;
+    padding: 5px;
+    width: 375px;
+    height: 149px; 
+    margin-left: 0px;
+  }
+section {
+    display: inline-block;
+    width: 595px;
+    height: 450px;
+    margin: 200px 0 0 121px;
+}
+
+main {
+    display: inline-block;
+    margin-left: 100px;
+
+    h1 {
+        width: 582px;
+        font-weight: 700;
+        font-size: 62px;
+        line-height: 82px;
+        letter-spacing: 0.6px;
+        color: #161A49;
+    }
+
+    p {
+       
+        font-weight: 400px;
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: 2.1px;
+        color: #4B505A;
+       
+    }
+}
+.link-final {
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #6FBF44;
+    cursor: pointer;
+    
+}
+
+@media screen and (max-width: 750px){
+    div {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+    .link-header {
+        display: none;
+    }
+    button {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+    section {
+        width: 50%;
+        margin: 20px auto;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    main {
+        position: relative;
+        margin: 0;
+        padding: 0px 10px;
+        text-align: center;
+        width: 100vw;
+        margin-top: 150px;
+    }
+    p {
+        text-align: center;
+        width: 386px;
+        margin-left: 100px;
+    }
+    
+    
+    }

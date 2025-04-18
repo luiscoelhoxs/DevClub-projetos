@@ -1,0 +1,126 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    font-weight: 600;
+    font-size: 24px;
+    color: #989D9C;
+    margin-top: 44px;
+    margin-left: 76px;
+}
+
+.link-header {
+    cursor: pointer;
+    margin-right: 23px;
+}
+
+.button-login {
+    background: #665AE1;
+    color: white;
+    width: 130px;
+    height: 41px;
+    border-radius: 20.5px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    border: none;
+    cursor: pointer;
+}
+
+.button-login:hover {
+    opacity: 0.8;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+div {
+    display: inline-block;
+    width: 568px;
+    height: 500px;
+    margin-top: 217px;
+    margin-left: 125px;
+
+}
+
+main {
+    display: inline-block;
+    margin-left: 86px;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 100px;
+    color: #515151;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 58px;
+    color: #515151;
+}
+
+p {
+    width: 515px;
+    font-weight: 400;
+    font-size: 24px;
+    color: #848484;
+    margin-top: 32px;
+    margin-bottom: 65px;
+}
+
+.button-final {
+    width: 239px;
+    height: 64px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 28px;
+    background: #ADFF00;
+    border: none;
+    cursor: pointer;
+}
+
+.button-final:hover {
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 900px) {
+    div {
+        display: block;
+        
+        margin: 300px auto 24px auto;
+    }
+
+    main {
+        display: block;
+        text-align: center;
+        margin: 100px auto 100px auto;
+        
+    }
+
+    header {
+        display: none;
+    }
+
+    p {
+        display: none;
+    }
+
+    h1 {
+        font-weight: 900;
+        font-size: 50px;
+    }
+
+    h2 {
+        font-weight: 500;
+        font-size: 30px;
+        margin-top: 7px;
+        margin-bottom: 17px;
+    }
+}
