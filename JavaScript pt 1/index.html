@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <title>Conversor de Moedas</title>
+</head>
+
+<body>
+    <img class="img-conversor" src="/assets/logo.gif" alt="logo convertor">
+    <main>
+        <label>
+            Converter <b>de</b>
+            <select>
+                <option>R$ Real brasileiro</option>
+            </select>
+        </label>
+
+        <label>
+            Converter <b>para</b>
+            <select class="select-moeda">
+                <option value="dolar">US$ Dólar americano</option>
+                <option value="euro">€ Euro</option>
+                <option value="libra">Libra</option>
+                <option value="bitcoin">Bitcoin</option>
+            </select>
+        </label>
+        <label>
+            Valor
+            <input id="input-value" placeholder="R$ 0,00">
+        </label>
+
+        <button>Converter</button>
+        <section>
+            <div class="flags">
+                <img src="/assets/brasil 2.png" alt="bandeira brasil">
+                <p class="moeda">Real</p>
+                <p class="valor-moedaReal">R$ 0,00</p>
+            </div>
+            <img class="arrow" src="/assets/Vector.png" alt="arrow">
+            <div class="flags">
+                <img class="img-section" src="/assets/usa.png" alt="bandeira EUA">
+                <p id="text" class="moeda">Dólar Americano</p>
+                <p class="valor-moedaNova">US$ 0.0</p>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="/script.js"></script>
+
+</html>
