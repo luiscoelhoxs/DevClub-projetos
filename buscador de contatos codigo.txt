@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+</head>
+<body>
+    <input placeholder="Digite aqui">
+    <p></p>
+    <button onclick="search()">Procurar contato</button>
+</body>
+<script src="script.js"></script>
+</html>
+
+
+
+let input = document.querySelector('input')
+let button = document.querySelector('button')
+let p = document.querySelector('p')
+
+
+const contatos = [
+    {Nome: 'Luis', Número: '(91) 99267-0366'},
+    {Nome: 'Izabelli', Número: '(91) 98433-6437'},
+    {Nome: 'Aline', Número: '(91) 98220-4098'},
+    {Nome: 'Nutricionista', Número: '(91) 99607-1258'},
+]
+
+function search(){
+    for (let i = 0; i < contatos.length; i++){ //let começa no 0, fica rodando enquanto i for menos que o numero de contatos,toda vez que roda ele aumenta uma posição e fica rodando
+
+        if (input.value.toLowerCase() === contatos[i].Nome.toLowerCase()){
+            p.innerHTML = `Contato encontrado: ${contatos[i].Nome} Tel: ${contatos[i].Número}`
+
+            break
+    } else {
+        p.innerHTML = `Contato não encontrado`
+    }
+}
+}
