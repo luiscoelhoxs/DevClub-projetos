@@ -22,9 +22,8 @@ function login() {
                 text.innerHTML = 'Senha incorreta, tente novamente.';
             } break;
         }
-        if (!encontrouUsuario){
+    }
+    if (!encontrouUsuario){
             text.innerHTML = 'Usuário não cadastrado, tente novamente.'
         }
-        
-    }
 }
