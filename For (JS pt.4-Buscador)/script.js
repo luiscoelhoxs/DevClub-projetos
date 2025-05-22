@@ -1,26 +1,30 @@
-let input = document.querySelector('input')
+let usuario = document.getElementById('usuario')
+let senha = document.getElementById('senha')
 let text = document.querySelector('p')
 let button = document.querySelector('button')
 
 const logins = [
-    { User: 'lucoe', Senha: 'Headlu07' },
-    { User: 'matinho', Senha: 'lucas123' },
-    { User: 'leandrovski', Senha: 'flavia123' },
-    { User: 'coutz', Senha: 'safado6969' },
+    { User: 'pessoa', Senha: 'linkedin' },
+    { User: 'fulano', Senha: 'Fulano123' },
+    { User: 'Ciclano', Senha: 'Ciclano123' },
+    { User: 'Beltrano', Senha: 'Beltrano123' },
 ]
+function login() {
+    let encontrouUsuario = false;
+    for (let i = 0; i < logins.length; i++) {
 
-function buscar() {
-    let i = 0;
-    let encontrado = false
-    do {
-        if (input.value.toLowerCase() === logins[i].User.toLowerCase()) {
-            text.innerHTML = `Login encontrado: ${logins[i].User}, ${logins[i].Senha}`;
-            encontrado = true
-            break;
+        if (usuario.value.toLowerCase() === logins[i].User.toLowerCase()) {
+            encontrouUsuario = true;
+            
+            if (senha.value === logins[i].Senha) {
+                text.innerHTML = `Bem vindo, ${logins[i].User}!`;
+            } else {
+                text.innerHTML = 'Senha incorreta, tente novamente.';
+            } break;
         }
-        i++;
-    } while (i < logins.length)
-        if( !encontrado){
-            text.innerHTML = 'Login não cadastrado';
+        if (!encontrouUsuario){
+            text.innerHTML = 'Usuário não cadastrado, tente novamente.'
         }
+        
     }
+}
